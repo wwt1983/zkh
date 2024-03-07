@@ -14,22 +14,16 @@ import Home from "./pages/home";
 
 function App() {
   return (
-    <BrowserRouter>
       <div className="App">
         <header className="App-header">
           <Link className="site-logo" to="/">
             #LOGO
           </Link>
-          <nav>ß
+          <nav>
             <Link to="/about">О компании</Link>
           </nav>
         </header>
       </div>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </BrowserRouter>
   );
 }
 
